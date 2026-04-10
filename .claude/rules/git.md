@@ -1,0 +1,15 @@
+---
+globs: n8n-template/**
+---
+
+# Git 환경
+
+`n8n-template/`은 바깥 폴더(`n8n-template-with-rules/`)와 별도의 독립 git 저장소다.
+바깥 `.gitignore`에 `n8n-template/`이 등록되어 있어, 바깥 git에서는 n8n-template 변경이 추적되지 않는다.
+
+## 규칙
+
+- **모든 git 명령**(`status`, `diff`, `log`, `commit`, `push` 등)은 `n8n-template/` 디렉토리에서 실행
+- Shell 도구 사용 시 `working_directory`를 `n8n-template/`(절대경로: `/Users/yeji.lee/dev/n8n-template-with-rules/n8n-template`)로 설정
+- orval 등 코드 생성 후 변경 확인(`git diff`, `git status`)도 반드시 `n8n-template/` 내부에서 실행
+- 커밋·PR 생성 시 `n8n-template/` 내부의 git을 사용

@@ -1,0 +1,37 @@
+{
+  // TypeScript SDK 경로 지정 (n8n-template 폴더 내 node_modules 사용)
+  "typescript.tsdk": "n8n-template/node_modules/typescript/lib",
+
+  // ESLint & Prettier 저장 시 자동 실행
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // 프로젝트 node_modules의 ESLint 사용 (n8n-template 폴더 기준)
+  "eslint.nodePath": "./n8n-template/node_modules",
+
+  // ESLint Flat Config 활성화 (eslint.config.js 사용)
+  "eslint.useFlatConfig": true,
+
+  // ESLint 검사 대상 언어
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  // TypeScript/JavaScript 기본 포맷터
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

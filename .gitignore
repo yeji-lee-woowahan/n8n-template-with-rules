@@ -1,0 +1,11 @@
+# 별도 git으로 관리되는 프로젝트 폴더
+n8n-template/
+
+# 빌드 산출물
+dist
+node_modules
+
+# OS 파일
+.DS_Store
+
+참고용/
