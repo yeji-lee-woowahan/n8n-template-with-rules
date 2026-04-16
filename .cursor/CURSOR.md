@@ -53,6 +53,12 @@
 - 코드 검색 시 `n8n-template/` 폴더 내에서만 검색
 - 루트의 설정 파일이나 `.agent/` 폴더는 필요시에만 참조
 
+## 참조 프로젝트
+
+- **MCPHUB**: `/Users/yeji.lee/dev/MCPHUB-with-rules` (코드는 `MCPHUB/src/`)
+  - "MCPHUB 참고" 요청 시 이 경로의 코드를 참조한다
+  - 주요 참고 패턴: `SelectAllChipGroup` (Chip 필터), `SearchFilter` 구조, 페이지 레이아웃 등
+
 ## 코드 검증
 
 - 구현 완료 후 타입 확인: `pnpm typecheck`
